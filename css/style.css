@@ -1,0 +1,286 @@
+:root {
+  --theme-blue: #315c80;
+  --theme-light-blue: #4181a6;
+  --theme-white: #fff;
+  --theme-gray: #808080;
+  --theme-yellow: #f2d33a;
+  --theme-pink: #e5645f;
+
+  --theme-text: #484848;
+
+  --theme-light: #5d6475;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html body {
+  font-family: sans-serif;
+}
+
+.container {
+  max-width: 1320px;
+  padding: 0 15px;
+  margin: 0 auto;
+}
+
+a {
+  text-decoration: none;
+  display: inline-block;
+  color: inherit;
+}
+
+ul li {
+  list-style: none;
+}
+
+img {
+  display: block;
+  width: 100%;
+}
+
+section {
+  padding: 60px 0;
+}
+
+.d-flex {
+  display: flex;
+}
+
+.justify-content-between {
+  justify-content: space-between;
+}
+
+.justify-content-center {
+  justify-content: center;
+}
+
+.align-items-center {
+  align-items: center;
+}
+
+.row {
+  display: flex;
+  flex-wrap: wrap;
+  row-gap: 10px;
+}
+
+.col-12 {
+  width: 100%;
+  padding: 0 10px;
+}
+
+.col-6 {
+  width: 50%;
+  padding: 0 10px;
+}
+
+.col-4 {
+  width: 33.33%;
+  padding: 0 10px;
+}
+
+.col-3 {
+  width: 25%;
+  padding: 0 10px;
+}
+
+/* header section start  */
+header {
+  background-color: var(--theme-white);
+  padding: 10px 0;
+  position: sticky;
+  top: 0;
+  z-index: 99;
+}
+
+header .topbar .logo {
+  font-size: 28px;
+  font-weight: 600;
+  color: var(--theme-blue);
+  font-family: Cambria, Cochin, Georgia, Times, "Times New Roman", serif;
+}
+
+header nav ul li,
+.user-menu ul li {
+  margin-right: 10px;
+}
+
+header nav ul li a,
+.user-menu ul li {
+  font-size: 14px;
+  padding: 10px;
+  transition: all 0.3s ease-in-out;
+}
+
+header nav ul li a:hover,
+header .topbar .user-menu ul li a:hover {
+  color: var(--theme-blue);
+}
+
+header .topbar .user-menu .btn,
+.btn {
+  background-color: var(--theme-light-blue);
+  color: var(--theme-white);
+  border: 0;
+  padding: 10px 12px;
+  border-radius: 20px;
+  cursor: pointer;
+  transition: all 0.2s ease-in-out;
+}
+
+header .topbar .user-menu .btn:hover,
+.btn:hover {
+  background-color: var(--theme-blue);
+}
+/* header section end  */
+
+/* hero section start  */
+.hero {
+  height: 70vh;
+  background-image: linear-gradient(#0000003c), url(../images/hero-bg-img1.webp);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  color: var(--theme-white);
+  position: relative;
+}
+
+.hero .hero-content {
+  position: absolute;
+  top: 30%;
+}
+
+.hero .hero-content .price {
+  font-size: 14px;
+  margin-bottom: 10px;
+}
+
+.hero .hero-content .price span {
+  font-size: 24px;
+  font-weight: 600;
+}
+
+.hero .hero-content h1 {
+  font-size: 57px;
+  margin-bottom: 10px;
+}
+
+.hero .hero-content p {
+  font-size: 18px;
+  margin-bottom: 10px;
+}
+
+.hero .hero-content a:hover {
+  color: var(--theme-gray);
+}
+
+.hero .hero-content .loction-search {
+  background-color: #ffffff6c;
+  padding: 10px;
+  transform: translate(170px, 100px);
+}
+
+.hero .hero-content .loction-search ul li {
+  margin: 0 5px;
+}
+
+.hero .hero-content .loction-search ul li:first-child a {
+  background-color: var(--theme-white);
+  color: var(--theme-gray);
+  width: 300px;
+  padding: 10px;
+}
+
+.hero .hero-content .loction-search ul li a i {
+  margin-right: 5px;
+  color: var(--theme-blue);
+}
+
+.hero .hero-content .loction-search ul li a {
+  background-color: var(--theme-white);
+  color: var(--theme-gray);
+  width: 200px;
+  padding: 10px;
+}
+/* hero section end */
+
+/* feature section start  */
+.feature-content h1 ,.verified-owner-content h1{
+  font-size: 28px;
+  font-weight: 500;
+  color: var(--theme-text);
+  margin: 10px;
+}
+
+.feature-content p ,.verified-owner-content p{
+  font-size: 14px;
+  color: var(--theme-light);
+  margin: 10px 10px 30px 10px;
+}
+
+.feature-content .card {
+  background-color: var(--theme-white);
+  border-radius: 5px;
+  padding-bottom: 15px;
+  margin: 10px;
+  box-shadow: 0 2px 11px 0 rgba(181, 127, 250, 0.1);
+  position: relative;
+}
+
+.feature-content .card .feature-img {
+  position: relative;
+}
+
+.feature-content .card .feature-img .featured-img-wrapper p {
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  color: var(--theme-white);
+}
+
+.feature-content .card .feature-img .featured-img-wrapper p span {
+  font-size: 21px;
+}
+
+.feature-content .card .rent-villa-detail p {
+  color: var(--theme-yellow);
+  margin: 10px 0;
+}
+
+.feature-content .card .rent-villa-detail a {
+  font-size: 24px;
+  font-weight: 400;
+  color: var(--theme-light);
+  margin-bottom: 10px;
+}
+
+.feature-content .card .rent-villa-detail a:hover {
+  color: var(--theme-blue);
+}
+
+.feature-content .card .rent-villa-detail span {
+  font-size: 12px;
+  margin: 5px 0;
+  color: var(--theme-gray);
+}
+
+.feature-content .card .favourit-icon {
+  background-color: var(--theme-pink);
+  color: var(--theme-white);
+  font-size: 18px;
+  padding: 8px;
+  margin: 10px;
+  border-radius: 50%;
+  position: absolute;
+  bottom: 0;
+  right: 0;
+}
+/* feature section end */
+
+/* verified-owner section star  */
+.verified-owner-content 
+/* verified-owner section end */
