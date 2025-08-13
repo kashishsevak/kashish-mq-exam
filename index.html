@@ -1,379 +1,471 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Rental X-Cabin Booking</title>
-    <link rel="stylesheet" href="./css/all.min.css" type="text/css" />
-    <link rel="stylesheet" href="./css/style.css" type="text/css" />
-    <link rel="stylesheet" href="./css/media.css" type="text/css" />
-  </head>
-  <body>
-    <!-- header section start -->
-    <header>
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Rental X-Cabin Booking</title>
+  <link rel="stylesheet" href="./css/all.min.css" type="text/css" />
+  <link rel="stylesheet" href="./css/style.css" type="text/css" />
+  <link rel="stylesheet" href="./css/media.css" type="text/css" />
+</head>
+
+<body>
+  <!-- header section start -->
+  <header>
+    <div class="container">
+      <div class="topbar d-flex justify-content-between align-items-center">
+        <a href="javascript:void(0)" class="logo">Rental X</a>
+        <nav class="d-none d-lg-flex">
+          <ul class="d-flex align-items-center">
+            <li><a href="javascript:void(0)">Home</a></li>
+            <li><a href="javascript:void(0)">Demos</a></li>
+            <li><a href="javascript:void(0)">Properties</a></li>
+            <li><a href="javascript:void(0)">Owners</a></li>
+            <li><a href="javascript:void(0)">Features</a></li>
+            <li><a href="javascript:void(0)">Pages</a></li>
+          </ul>
+        </nav d-lg-none>
+        <div class="user-menu d-lg-flex">
+          <ul class="d-flex align-items-center">
+            <li class="d-none d-lg-flex">
+              <a href="javascript:void(0)">
+                <i class="fa-solid fa-lock"></i>
+                Login
+              </a>
+            </li>
+            <li class="d-none d-lg-flex">
+              <a href="javascript:void(0)">
+                <i class="fa-solid fa-plus"></i>
+                Sign Up
+              </a>
+            </li>
+            <li class="d-lg-flex"><button class="btn">Submit Property</button></li>
+            <!-- <li class="d-flex d-lg-none">
+              <button><i class="fa-solid fa-bars"></i></button>
+            </li> -->
+          </ul>
+        </div>
+      </div>
+    </div>
+  </header>
+  <!-- header section end -->
+
+  <main>
+    <!-- hero section start  -->
+    <section class="hero">
       <div class="container">
-        <div class="topbar d-flex justify-content-between align-items-center">
-          <a href="javascript:void(0)" class="logo">Rental X</a>
-          <nav>
-            <ul class="d-flex align-items-center">
-              <li><a href="javascript:void(0)">Home</a></li>
-              <li><a href="javascript:void(0)">Demos</a></li>
-              <li><a href="javascript:void(0)">Properties</a></li>
-              <li><a href="javascript:void(0)">Owners</a></li>
-              <li><a href="javascript:void(0)">Features</a></li>
-              <li><a href="javascript:void(0)">Pages</a></li>
-            </ul>
-          </nav>
-          <div class="user-menu d-flex">
-            <ul class="d-flex align-items-center">
-              <li>
-                <a href="javascript:void(0)">
-                  <i class="fa-solid fa-lock"></i>
-                  Login
-                </a>
-              </li>
-              <li>
-                <a href="javascript:void(0)">
-                  <i class="fa-solid fa-plus"></i>
-                  Sign Up
-                </a>
-              </li>
-              <li><button class="btn">Submit Property</button></li>
-            </ul>
+        <div class="hero-content">
+          <div class="price">
+            <p><span>$ 50</span>/per night</p>
+          </div>
+          <h1>Spacious family home</h1>
+          <p>
+            Enjoy a huge bedroom in a newly renovated 1000 sq feet, 3 bedroom,
+            apartment with all the <br />
+            amenities. It has a fully functional kitchen with cookware and a
+            bathroom with all the essentials <br />
+            and a dryer. Location is extremely convenient.
+          </p>
+          <a href="javascript:void(0)">View More</a>
+          <!-- <div class="loction-search">
+            <nav>
+              <ul class="d-flex justify-content-between">
+                <li>
+                  <a href="javascript:void(0)">
+                    <i class="fa-solid fa-location-dot"></i>
+                    where do you want to go?
+                  </a>
+                </li>
+                <li>
+                  <a href="javascript:void(0)">
+                    <i class="fa-solid fa-calendar-days"></i>
+                    Check-in
+                  </a>
+                </li>
+                <li>
+                  <a href="javascript:void(0)">
+                    <i class="fa-solid fa-calendar-days"></i>
+                    Check-out
+                  </a>
+                </li>
+                <li>
+                  <a href="javascript:void(0)">
+                    <i class="fa-solid fa-user-tie"></i>
+                    Guests
+                  </a>
+                </li>
+                <li><button class="btn">Search</button></li>
+              </ul>
+            </nav>
+          </div> -->
+        </div>
+      </div>
+    </section>
+    <!-- hero section end -->
+
+    <!-- featured section start  -->
+    <section class="feature">
+      <div class="container">
+        <div class="feature-content">
+          <h1>Featured listings to rent</h1>
+          <p>The most trendy accommodations available</p>
+          <div class="row">
+            <div class="col-4 col-md-6 col-lg-4">
+              <div class="card">
+                <div class="feature-img">
+                  <img src="./images/featured-img-1.webp" alt="featured-img-1" />
+                  <div class="featured-img-wrapper">
+                    <p><span>$45</span>/per night</p>
+                  </div>
+                </div>
+                <div class="rent-villa-detail">
+                  <p>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                  </p>
+                  <a href="javascript:void(0)">Modern Villa with Pool</a>
+                  <br />
+                  <span><i class="fa-solid fa-location-dot"></i>East Side, New
+                    York</span>
+                  <br />
+                  <span><i class="fa-regular fa-house"></i>Villa / Entire
+                    home</span>
+                </div>
+                <div class="favourit-icon">
+                  <a href="javascript:void(0)">
+                    <i class="fa-solid fa-heart"></i>
+                  </a>
+                </div>
+              </div>
+            </div>
+            <div class="col-4 col-md-6 col-lg-4">
+              <div class="card">
+                <div class="feature-img">
+                  <img src="./images/featured-img-2.webp" alt="featured-img-2" />
+                  <div class="featured-img-wrapper">
+                    <p><span>$45</span>/per night</p>
+                  </div>
+                </div>
+                <div class="rent-villa-detail">
+                  <p>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                  </p>
+                  <a href="javascript:void(0)">Victorian Bed & Breakfast</a>
+                  <br />
+                  <span><i class="fa-solid fa-location-dot"></i>East Side, New
+                    York</span>
+                  <br />
+                  <span><i class="fa-regular fa-house"></i>Villa / Entire
+                    home</span>
+                </div>
+                <div class="favourit-icon">
+                  <a href="javascript:void(0)">
+                    <i class="fa-solid fa-heart"></i>
+                  </a>
+                </div>
+              </div>
+            </div>
+            <div class="col-4 col-md-6 col-lg-4">
+              <div class="card">
+                <div class="feature-img">
+                  <img src="./images/featured-img-3.webp" alt="featured-img-3" />
+                  <div class="featured-img-wrapper">
+                    <p><span>$45</span>/per night</p>
+                  </div>
+                </div>
+                <div class="rent-villa-detail">
+                  <p>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                  </p>
+                  <a href="javascript:void(0)">Charming Private Room</a>
+                  <br />
+                  <span><i class="fa-solid fa-location-dot"></i>East Side, New
+                    York</span>
+                  <br />
+                  <span><i class="fa-regular fa-house"></i>Villa / Entire
+                    home</span>
+                </div>
+                <div class="favourit-icon">
+                  <a href="javascript:void(0)">
+                    <i class="fa-solid fa-heart"></i>
+                  </a>
+                </div>
+              </div>
+            </div>
+            <div class="col-4 col-md-6 col-lg-4">
+              <div class="card">
+                <div class="feature-img">
+                  <img src="./images/featured-img-4.webp" alt="featured-img-4" />
+                  <div class="featured-img-wrapper">
+                    <p><span>$45</span>/per night</p>
+                  </div>
+                </div>
+                <div class="rent-villa-detail">
+                  <p>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                  </p>
+                  <a href="javascript:void(0)">Charm Villa to Rent</a>
+                  <br />
+                  <span><i class="fa-solid fa-location-dot"></i>East Side, New
+                    York</span>
+                  <br />
+                  <span><i class="fa-regular fa-house"></i>Villa / Entire
+                    home</span>
+                </div>
+                <div class="favourit-icon">
+                  <a href="javascript:void(0)">
+                    <i class="fa-solid fa-heart"></i>
+                  </a>
+                </div>
+              </div>
+            </div>
+            <div class="col-4 col-md-6 col-lg-4">
+              <div class="card">
+                <div class="feature-img">
+                  <img src="./images/featured-img-5.webp" alt="featured-img-5" />
+                  <div class="featured-img-wrapper">
+                    <p><span>$45</span>/per night</p>
+                  </div>
+                </div>
+                <div class="rent-villa-detail">
+                  <p>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                  </p>
+                  <a href="javascript:void(0)">Modern Condo with lake view</a>
+                  <br />
+                  <span><i class="fa-solid fa-location-dot"></i>East Side, New
+                    York</span>
+                  <br />
+                  <span><i class="fa-regular fa-house"></i>Villa / Entire
+                    home</span>
+                </div>
+                <div class="favourit-icon">
+                  <a href="javascript:void(0)">
+                    <i class="fa-solid fa-heart"></i>
+                  </a>
+                </div>
+              </div>
+            </div>
+            <div class="col-4 col-md-6 col-lg-4">
+              <div class="card">
+                <div class="feature-img">
+                  <img src="./images/featured-img-6.jpeg" alt="featured-img-6" />
+                  <div class="featured-img-wrapper">
+                    <p><span>$45</span>/per night</p>
+                  </div>
+                </div>
+                <div class="rent-villa-detail">
+                  <p>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                  </p>
+                  <a href="javascript:void(0)">Private Cozy Apartment</a>
+                  <br />
+                  <span><i class="fa-solid fa-location-dot"></i>East Side, New
+                    York</span>
+                  <br />
+                  <span><i class="fa-regular fa-house"></i>Villa / Entire
+                    home</span>
+                </div>
+                <div class="favourit-icon">
+                  <a href="javascript:void(0)">
+                    <i class="fa-solid fa-heart"></i>
+                  </a>
+                </div>
+              </div>
+            </div>
           </div>
         </div>
       </div>
-    </header>
-    <!-- header section end -->
+    </section>
+    <!-- featured section end -->
 
-    <main>
-      <!-- hero section start  -->
-      <section class="hero">
-        <div class="container">
-          <div class="hero-content">
-            <div class="price">
-              <p><span>$ 50</span>/per night</p>
+    <!-- verified-owners section start  -->
+    <section class="verified-owner">
+      <div class="container">
+        <div class="verified-owner-content">
+          <h1>Verified owners</h1>
+          <p>Highlight the most popular owners</p>
+          <div class="row">
+            <div class="col-4 col-md-6 col-lg-4">
+              <div class="verified-owner-card">
+                <div class="owner-img">
+                  <img src="./images/owner-1.jpg" alt="owner-1">
+                  <div class="img-wrapper">
+                    <i class="fa-solid fa-user-shield"></i>
+                  </div>
+                </div>
+                <div class="owner-detail">
+                  <p>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                  </p>
+                  <a href="javascript:void(0)">Lilia Afleck</a>
+                  <br>
+                  <span>Verified and Superhost</span>
+                </div>
+              </div>
             </div>
-            <h1>Spacious family home</h1>
-            <p>
-              Enjoy a huge bedroom in a newly renovated 1000 sq feet, 3 bedroom,
-              apartment with all the <br />
-              amenities. It has a fully functional kitchen with cookware and a
-              bathroom with all the essentials <br />
-              and a dryer. Location is extremely convenient.
-            </p>
-            <a href="javascript:void(0)">View More</a>
-            <div class="loction-search">
-              <nav>
-                <ul class="d-flex justify-content-between">
-                  <li>
-                    <a href="javascript:void(0)">
-                      <i class="fa-solid fa-location-dot"></i>
-                      where do you want to go?
-                    </a>
-                  </li>
-                  <li>
-                    <a href="javascript:void(0)">
-                      <i class="fa-solid fa-calendar-days"></i>
-                      Check-in
-                    </a>
-                  </li>
-                  <li>
-                    <a href="javascript:void(0)">
-                      <i class="fa-solid fa-calendar-days"></i>
-                      Check-out
-                    </a>
-                  </li>
-                  <li>
-                    <a href="javascript:void(0)">
-                      <i class="fa-solid fa-user-tie"></i>
-                      Guests
-                    </a>
-                  </li>
-                  <li><button class="btn">Search</button></li>
-                </ul>
-              </nav>
+            <div class="col-4 col-md-6 col-lg-4">
+              <div class="verified-owner-card">
+                <div class="owner-img">
+                  <img src="./images/owner-2.jpg" alt="owner-2">
+                  <div class="img-wrapper">
+                    <i class="fa-solid fa-user-shield"></i>
+                  </div>
+                </div>
+                <div class="owner-detail">
+                  <p>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                  </p>
+                  <a href="javascript:void(0)">Janet Rose</a>
+                  <br>
+                  <span>Verified and Superhost</span>
+                </div>
+              </div>
             </div>
-          </div>
-        </div>
-      </section>
-      <!-- hero section end -->
-
-      <!-- featured section start  -->
-      <section class="feature">
-        <div class="container">
-          <div class="feature-content">
-            <h1>Featured listings to rent</h1>
-            <p>The most trendy accommodations available</p>
-            <div class="row">
-              <div class="col-4">
-                <div class="card">
-                  <div class="feature-img">
-                    <img
-                      src="./images/featured-img-1.webp"
-                      alt="featured-img-1"
-                    />
-                    <div class="featured-img-wrapper">
-                      <p><span>$45</span>/per night</p>
-                    </div>
-                  </div>
-                  <div class="rent-villa-detail">
-                    <p>
-                      <i class="fa-solid fa-star"></i>
-                      <i class="fa-solid fa-star"></i>
-                      <i class="fa-solid fa-star"></i>
-                      <i class="fa-solid fa-star"></i>
-                      <i class="fa-solid fa-star"></i>
-                    </p>
-                    <a href="javascript:void(0)">Modern Villa with Pool</a>
-                    <br />
-                    <span
-                      ><i class="fa-solid fa-location-dot"></i>East Side, New
-                      York</span
-                    >
-                    <br />
-                    <span
-                      ><i class="fa-regular fa-house"></i>Villa / Entire
-                      home</span
-                    >
-                  </div>
-                  <div class="favourit-icon">
-                    <a href="javascript:void(0)">
-                      <i class="fa-solid fa-heart"></i>
-                    </a>
+            <div class="col-4 col-md-6 col-lg-4">
+              <div class="verified-owner-card">
+                <div class="owner-img">
+                  <img src="./images/owner-3.jpg" alt="owner-3">
+                  <div class="img-wrapper">
+                    <i class="fa-solid fa-user-shield"></i>
                   </div>
                 </div>
-              </div>
-              <div class="col-4">
-                <div class="card">
-                  <div class="feature-img">
-                    <img
-                      src="./images/featured-img-2.webp"
-                      alt="featured-img-2"
-                    />
-                    <div class="featured-img-wrapper">
-                      <p><span>$45</span>/per night</p>
-                    </div>
-                  </div>
-                  <div class="rent-villa-detail">
-                    <p>
-                      <i class="fa-solid fa-star"></i>
-                      <i class="fa-solid fa-star"></i>
-                      <i class="fa-solid fa-star"></i>
-                      <i class="fa-solid fa-star"></i>
-                      <i class="fa-solid fa-star"></i>
-                    </p>
-                    <a href="javascript:void(0)">Victorian Bed & Breakfast</a>
-                    <br />
-                    <span
-                      ><i class="fa-solid fa-location-dot"></i>East Side, New
-                      York</span
-                    >
-                    <br />
-                    <span
-                      ><i class="fa-regular fa-house"></i>Villa / Entire
-                      home</span
-                    >
-                  </div>
-                  <div class="favourit-icon">
-                    <a href="javascript:void(0)">
-                      <i class="fa-solid fa-heart"></i>
-                    </a>
-                  </div>
-                </div>
-              </div>
-              <div class="col-4">
-                <div class="card">
-                  <div class="feature-img">
-                    <img
-                      src="./images/featured-img-3.webp"
-                      alt="featured-img-3"
-                    />
-                    <div class="featured-img-wrapper">
-                      <p><span>$45</span>/per night</p>
-                    </div>
-                  </div>
-                  <div class="rent-villa-detail">
-                    <p>
-                      <i class="fa-solid fa-star"></i>
-                      <i class="fa-solid fa-star"></i>
-                      <i class="fa-solid fa-star"></i>
-                      <i class="fa-solid fa-star"></i>
-                      <i class="fa-solid fa-star"></i>
-                    </p>
-                    <a href="javascript:void(0)">Charming Private Room</a>
-                    <br />
-                    <span
-                      ><i class="fa-solid fa-location-dot"></i>East Side, New
-                      York</span
-                    >
-                    <br />
-                    <span
-                      ><i class="fa-regular fa-house"></i>Villa / Entire
-                      home</span
-                    >
-                  </div>
-                  <div class="favourit-icon">
-                    <a href="javascript:void(0)">
-                      <i class="fa-solid fa-heart"></i>
-                    </a>
-                  </div>
-                </div>
-              </div>
-              <div class="col-4">
-                <div class="card">
-                  <div class="feature-img">
-                    <img
-                      src="./images/featured-img-4.webp"
-                      alt="featured-img-4"
-                    />
-                    <div class="featured-img-wrapper">
-                      <p><span>$45</span>/per night</p>
-                    </div>
-                  </div>
-                  <div class="rent-villa-detail">
-                    <p>
-                      <i class="fa-solid fa-star"></i>
-                      <i class="fa-solid fa-star"></i>
-                      <i class="fa-solid fa-star"></i>
-                      <i class="fa-solid fa-star"></i>
-                      <i class="fa-solid fa-star"></i>
-                    </p>
-                    <a href="javascript:void(0)">Charm Villa to Rent</a>
-                    <br />
-                    <span
-                      ><i class="fa-solid fa-location-dot"></i>East Side, New
-                      York</span
-                    >
-                    <br />
-                    <span
-                      ><i class="fa-regular fa-house"></i>Villa / Entire
-                      home</span
-                    >
-                  </div>
-                  <div class="favourit-icon">
-                    <a href="javascript:void(0)">
-                      <i class="fa-solid fa-heart"></i>
-                    </a>
-                  </div>
-                </div>
-              </div>
-              <div class="col-4">
-                <div class="card">
-                  <div class="feature-img">
-                    <img
-                      src="./images/featured-img-5.webp"
-                      alt="featured-img-5"
-                    />
-                    <div class="featured-img-wrapper">
-                      <p><span>$45</span>/per night</p>
-                    </div>
-                  </div>
-                  <div class="rent-villa-detail">
-                    <p>
-                      <i class="fa-solid fa-star"></i>
-                      <i class="fa-solid fa-star"></i>
-                      <i class="fa-solid fa-star"></i>
-                      <i class="fa-solid fa-star"></i>
-                      <i class="fa-solid fa-star"></i>
-                    </p>
-                    <a href="javascript:void(0)">Modern Condo with lake view</a>
-                    <br />
-                    <span
-                      ><i class="fa-solid fa-location-dot"></i>East Side, New
-                      York</span
-                    >
-                    <br />
-                    <span
-                      ><i class="fa-regular fa-house"></i>Villa / Entire
-                      home</span
-                    >
-                  </div>
-                  <div class="favourit-icon">
-                    <a href="javascript:void(0)">
-                      <i class="fa-solid fa-heart"></i>
-                    </a>
-                  </div>
-                </div>
-              </div>
-              <div class="col-4">
-                <div class="card">
-                  <div class="feature-img">
-                    <img
-                      src="./images/featured-img-6.jpeg"
-                      alt="featured-img-6"
-                    />
-                    <div class="featured-img-wrapper">
-                      <p><span>$45</span>/per night</p>
-                    </div>
-                  </div>
-                  <div class="rent-villa-detail">
-                    <p>
-                      <i class="fa-solid fa-star"></i>
-                      <i class="fa-solid fa-star"></i>
-                      <i class="fa-solid fa-star"></i>
-                      <i class="fa-solid fa-star"></i>
-                      <i class="fa-solid fa-star"></i>
-                    </p>
-                    <a href="javascript:void(0)">Private Cozy Apartment</a>
-                    <br />
-                    <span
-                      ><i class="fa-solid fa-location-dot"></i>East Side, New
-                      York</span
-                    >
-                    <br />
-                    <span
-                      ><i class="fa-regular fa-house"></i>Villa / Entire
-                      home</span
-                    >
-                  </div>
-                  <div class="favourit-icon">
-                    <a href="javascript:void(0)">
-                      <i class="fa-solid fa-heart"></i>
-                    </a>
-                  </div>
+                <div class="owner-detail">
+                  <p>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                  </p>
+                  <a href="javascript:void(0)">Michael Douglas</a>
+                  <br>
+                  <span>Verified and Superhost</span>
                 </div>
               </div>
             </div>
           </div>
         </div>
-      </section>
-      <!-- featured section end -->
+      </div>
+    </section>
+    <!-- verified-owners section end -->
+  </main>
 
-      <!-- verified-owners section start  -->
-      <section class="verified-owner">
-        <div class="container">
-          <div class="verified-owner-content">
-            <h1>Verified owners</h1>
-            <p>Highlight the most popular owners</p>
-            <div class="row">
-              <div class="col-4">
-                <div class="verified-owner-card">
-                  <div class="owner-img">
-                    <img src="./images/owner-1.jpg" alt="">
-                    <div class="img-wrapper">
-                        <i class="fa-solid fa-user-shield"></i>
-                    </div>
-                  </div>
-                  <div class="owner-detail">
-                    <p>
-                      <i class="fa-solid fa-star"></i>
-                      <i class="fa-solid fa-star"></i>
-                      <i class="fa-solid fa-star"></i>
-                      <i class="fa-solid fa-star"></i>
-                      <i class="fa-solid fa-star"></i>
-                    </p>
-                    <a href="javascript:void(0)">Lilia Afleck</a>
-                    <br>
-                    <span>Verified and Superhost</span>
-                  </div>
+  <!-- footer section start  -->
+  <footer>
+    <div class="container">
+      <div class="footer-content">
+        <div class="row">
+          <div class="col-4 col-lg-4">
+            <div class="change-currency">
+              <h1>Change Currency</h1>
+              <select name="usd" id="usd">
+                <option value="usd">USD</option>
+                <option value="eur">EUR</option>
+                <option value="gbp">GBP</option>
+              </select>
+              <h3>About Rental X Theme</h3>
+              <p>WpReis committed to delivering a high level of expertise, customer service, and attention to detail.<br> <br>We built the most featured WordPress theme for such a project. Test and convince yourself.</p>
+            </div>
+          </div>
+          <div class="col-4 col-lg-4">
+            <div class="listing">
+              <h1>Featured Listings</h1>
+              <div class="d-flex">
+                <div class="listing-img">
+                  <img src="./images/footer-img-1.webp" alt="footer-img-1">
+                </div>
+                <div class="img-wrapper">
+                  <a href="javascript:void(0)">Charm Villa to Rent</a>
+                  <br>
+                  <span>Brightwood, Baltimore</span>
+                  <span>$ 16 /night</span>
+                </div>
+              </div>
+              <br>
+              <div class="d-flex">
+                <div class="listing-img">
+                  <img src="./images/footer-img-2.webp" alt="footer-img-2">
+                </div>
+                <div class="img-wrapper">
+                  <a href="javascript:void(0)">Charm Villa to Rent</a>
+                  <br>
+                  <span>Brightwood, Baltimore</span>
+                  <span>$ 26 /night</span>
                 </div>
               </div>
             </div>
           </div>
+          <div class="col-4 col-lg-4">
+            <div class="contact-us">
+              <h1>Contact</h1>
+              <p><i class="fa-regular fa-house"></i>3755 Commercial St SE Salem, Corner with Sunny Boulevard</p>
+              <a href="javascript:void(0)">
+                <i class="fa-solid fa-phone"></i>
+                (305) 555-4446
+              </a>
+              <br>
+              <a href="javascript:void(0)">
+                <i class="fa-regular fa-envelope"></i>
+                email@yourdomain.com
+              </a>
+              <br>
+              <a href="javascript:void(0)">
+                <i class="fa-solid fa-desktop"></i>
+                Rental X
+              </a>
+              <div class="social-icon">
+                <a href="javascript:void(0)"><i class="fa-brands fa-facebook"></i></a>
+                <a href="javascript:void(0)"><i class="fa-brands fa-twitter"></i></a>
+                <a href="javascript:void(0)"><i class="fa-brands fa-instagram"></i></a>
+                <a href="javascript:void(0)"><i class="fa-brands fa-linkedin"></i></a>
+              </div>
+            </div>
+          </div>
         </div>
-      </section>
-      <!-- verified-owners section end -->
-    </main>
-  </body>
+      </div>
+    </div>
+    <div class="copyright-section d-flex justify-content-between">
+      <p>Copyright WP Estate. All Rights Reserved.</p>
+      <div class="d-flex">
+        <a href="javascript:void(0)">Terms and Conditions</a>
+        <a href="javascript:void(0)">Contact</a>
+      </div>
+    </div>
+  </footer>
+  <!-- footer section end -->
+</body>
+
 </html>

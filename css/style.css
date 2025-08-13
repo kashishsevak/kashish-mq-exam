@@ -5,6 +5,8 @@
   --theme-gray: #808080;
   --theme-yellow: #f2d33a;
   --theme-pink: #e5645f;
+  --theme-bgc:#edebe9;
+  --theme-bg:#e4e1de;
 
   --theme-text: #484848;
 
@@ -50,6 +52,10 @@ section {
   display: flex;
 }
 
+.d-none{
+  display: none;
+}
+
 .justify-content-between {
   justify-content: space-between;
 }
@@ -79,7 +85,7 @@ section {
 }
 
 .col-4 {
-  width: 33.33%;
+  width: 100%;
   padding: 0 10px;
 }
 
@@ -165,12 +171,12 @@ header .topbar .user-menu .btn:hover,
 }
 
 .hero .hero-content h1 {
-  font-size: 57px;
+  font-size: 32px;
   margin-bottom: 10px;
 }
 
 .hero .hero-content p {
-  font-size: 18px;
+  font-size: 10px;
   margin-bottom: 10px;
 }
 
@@ -181,7 +187,7 @@ header .topbar .user-menu .btn:hover,
 .hero .hero-content .loction-search {
   background-color: #ffffff6c;
   padding: 10px;
-  transform: translate(170px, 100px);
+  transform: translate(170px);
 }
 
 .hero .hero-content .loction-search ul li {
@@ -222,16 +228,16 @@ header .topbar .user-menu .btn:hover,
   margin: 10px 10px 30px 10px;
 }
 
-.feature-content .card {
+.feature-content .card ,.verified-owner-card {
   background-color: var(--theme-white);
   border-radius: 5px;
-  padding-bottom: 15px;
+  padding: 10px;
   margin: 10px;
-  box-shadow: 0 2px 11px 0 rgba(181, 127, 250, 0.1);
+  box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
   position: relative;
 }
 
-.feature-content .card .feature-img {
+.feature-content .card .feature-img ,.verified-owner-card .owner-img {
   position: relative;
 }
 
@@ -246,19 +252,20 @@ header .topbar .user-menu .btn:hover,
   font-size: 21px;
 }
 
-.feature-content .card .rent-villa-detail p {
+.feature-content .card .rent-villa-detail p,.verified-owner-card p {
   color: var(--theme-yellow);
   margin: 10px 0;
 }
 
-.feature-content .card .rent-villa-detail a {
+.feature-content .card .rent-villa-detail a,.verified-owner-card a {
   font-size: 24px;
   font-weight: 400;
   color: var(--theme-light);
   margin-bottom: 10px;
+  transition: all 0.3s ease-in-out;
 }
 
-.feature-content .card .rent-villa-detail a:hover {
+.feature-content .card .rent-villa-detail a:hover{
   color: var(--theme-blue);
 }
 
@@ -282,5 +289,106 @@ header .topbar .user-menu .btn:hover,
 /* feature section end */
 
 /* verified-owner section star  */
-.verified-owner-content 
+.verified-owner-content .verified-owner-card span{
+  font-size: 14px;
+  color: var(--theme-gray);
+}
+.verified-owner-content .verified-owner-card:hover a{
+  color: var(--theme-blue);
+}
+
+.verified-owner-content .verified-owner-card .owner-img img{
+  height: 300px;
+  border-radius: 5px;
+  object-fit: cover;
+}
+
+.verified-owner-content .verified-owner-card .img-wrapper{
+  margin: 10px;
+  position: absolute;
+  top: 0;
+  right: 0;
+}
 /* verified-owner section end */
+
+/* footer section start  */
+footer{
+  background-color: var(--theme-bgc);
+  padding-top: 40px;
+}
+
+footer .footer-content .change-currency h1,.listing h1,.contact-us h1{
+  font-size: 24px;
+  font-weight: 500;
+  margin-bottom: 20px;
+}
+
+footer .footer-content .change-currency select{
+  width: 200px;
+  padding: 10px 5px;
+  outline: none;
+  border: 0;
+  border-radius: 5px;
+  margin-bottom: 30px;
+}
+
+footer .footer-content .change-currency h3{
+  font-size: 16px;
+  font-weight: 600;
+  margin-bottom: 20px;
+  color: var(--theme-blue);
+}
+
+footer .footer-content .change-currency p{
+  font-size: 14px;
+  color: var(--theme-light);
+}
+
+footer .footer-content .listing .listing-img img{
+  height: 100px;
+  object-fit: cover;
+  border-radius: 20px;
+}
+
+footer .footer-content .listing .img-wrapper a{
+  font-size: 18px;
+  font-weight: 600;
+  margin: 5px;
+}
+
+footer .footer-content .listing .img-wrapper span{
+  display: block;
+  margin: 10px;
+}
+footer .footer-content .contact-us p,footer .footer-content .contact-us a {
+  color: var(--theme-gray);
+  margin: 10px 0;
+  transition: all 0.3s ease-in-out;
+}
+footer .footer-content .contact-us p i{
+  margin-right: 10px;
+}
+
+footer .footer-content .contact-us a i,footer .footer-content .contact-us p i{
+  color: var(--theme-text);
+}
+
+footer .footer-content .contact-us a:hover{
+  color: var(--theme-text);
+}
+
+footer .copyright-section {
+  background-color: var(--theme-bg);
+  padding: 20px 40px;
+  margin-top: 50px;
+}
+
+footer .copyright-section a{
+  margin: 0 10px;
+  transition: all 0.3s ease-in-out;
+}
+
+footer .copyright-section a:hover{
+  color: var(--theme-light);
+}
+/* footer section end  */
